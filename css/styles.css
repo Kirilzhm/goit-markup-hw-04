@@ -122,6 +122,8 @@ button {
     margin-left: auto;
     margin-right: auto;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/photos/people-office\ 1.jpg');
+    background-size: contain;
 }
 .hero-text {
     font-weight: 700;
@@ -195,7 +197,16 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
 }
-
+.benefits-icon-container{
+    border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        background: #f4f4fd;
+}
+.benefits-icon{
+    margin: 24px 101px;
+}
 /* ======== PORTFOLIO STYLES ======== */
 .portfolio-section {
     background: #f4f4fd;
@@ -222,7 +233,8 @@ button {
     border-radius: 0 0 4px 4px;
         padding: 0px 0px 32px 0px;
         width: 264px;
-        height: 380px;
+        height: 428px;
+        padding-bottom: 0;
 }
 .container-of-portfolio{
     padding: 32px 0;
@@ -245,7 +257,31 @@ button {
     text-align: center;
     color: #434455;
 }
-
+.portfolio-icon-list{
+    display: flex;
+    gap: 24px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+.portfolio-icon-item:nth-child(1){
+    margin-left: 16px;
+}
+.portfolio-icon-item{
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.portfolio-icon-item:hover{
+    background-color: #404bbf;
+}
+.portfolio-icon-link{
+    display: block;
+    line-height: 0;
+}
+.portfolio-icon{
+    margin: 12px;
+}
 /*--========PORTFOLIO OF WORK========--*/
 .portfolio-of-work-section {
     color: #ffffff;
@@ -271,7 +307,7 @@ button {
     row-gap: 48px;
 }
 .work-item{
-    width: calc((100% - 48px) / 3)
+    width: calc((100% - 48px) / 3);
 }
 .conatainer-of-app{
     border-bottom: 1px solid #e7e9fc;
@@ -288,7 +324,32 @@ button {
     color: #2e2f42;
     margin-bottom: 8px;
 }
-
+.photo-and-overlay{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateY(100%);
+    background: #4d5ae5;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #f4f4fd;
+        padding: 40px 32px 164px 32px;
+}
+.work-item:hover .overlay{
+    transform: translateY(0%);
+}
 /* ======== FOOTER STYLES ======== */
 .page-footer {
     background: #2e2f42;
@@ -327,4 +388,42 @@ button {
 
 .text-color-white {
     color: #f4f4fd
+}
+.container-in-footer{
+    display: flex;
+    width: 619px;
+    margin-left: 141px;
+    gap: 16px;
+    
+}
+.footer-icon-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+
+.footer-icon-item {
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.footer-icon-item:hover{
+    background-color: #31d0aa;
+}
+.footer-icon-link {
+    display: block;
+    line-height: 0;
+}
+
+.footer-icon {
+    margin: 12px;
+}
+.footer-icons-text{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
 }
