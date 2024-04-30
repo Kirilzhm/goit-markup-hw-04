@@ -245,7 +245,6 @@ button {
     background: #f4f4fd;
     padding: 120px 0;
 }
-
 .workers {
     font-weight: 700;
     font-size: 36px;
@@ -304,6 +303,9 @@ button {
 .portfolio-icon-item:nth-child(1){
     margin-left: 16px;
 }
+.portfolio-icon-item:nth-child(4) {
+    margin-right: 16px;
+}
 .portfolio-icon-item{
     width: 40px;
     height: 40px;
@@ -312,9 +314,9 @@ button {
 .portfolio-icon-link{
     background-color: #4d5ae5;
     border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-icon-link:hover{
@@ -443,7 +445,9 @@ button {
     color: #f4f4fd;
     max-width: 264px;
 }
-
+.footer-container{
+    margin-right: 120px;
+}
 .text-color-white {
     color: #f4f4fd
 }
@@ -463,17 +467,6 @@ button {
 .footer-icon-item {
     width: 40px;
     height: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-icon-link {
-    display: block;
-    line-height: 0;
-}
-
-.footer-icon {
-    width: 24px;
-    height: 24px;
-    fill: #f4f4fd;
 }
 .footer-icons-text{
     font-weight: 500;
@@ -483,9 +476,7 @@ button {
         color: #ffffff;
         margin-bottom: 16px;
 }
-.text-and-icons{
-    margin-right: 120px;
-}
+
 .footer-icon-link{
     background-color: #4d5ae5;
     border-radius: 50%;
@@ -494,6 +485,8 @@ button {
     justify-content: center;
     width: 40px;
     height: 40px;
+    line-height: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 .footer-icon-link:hover,
 .footer-icon-link:focus{
